@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+    --main-blue: #00d1ff;
+    --main-yellow: rgb(255, 183, 0);
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.swiper-container {
+    width: 75%;
+    height: 100%;
+}
+
+.main-slider {
+    width: 100%;
+    height: 100dvh;
+}
+
+.slider-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.thumbnail-container {
+    height: 24rem;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 2rem;
+    right: -60%;
+    z-index: 5;
+}
+.thumbnail-slider {
+    width: 14rem;
+    height: 10rem;
+
+    /* overflow: hidden; */
+}
+
+.thumbnail-slider .swiper-slide {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.thumbnail-slider .swiper-slide-active {
+    opacity: 1;
+}
+
+.thumbnail-slider .swiper-slide:hover {
+    opacity: 0.8;
+}
+
+.thumbnail-slider img {
+    width: 14rem;
+    height: 22rem;
+    object-fit: cover;
+    object-position: center;
+}
+.thumbnail-slider .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.header-container {
+    z-index: 100;
+    top: 1rem;
+    width: 90%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.491);
+    overflow: hidden;
+    border-radius: 3rem;
+    padding: 15px 30px 15px 30px;
+}
+
+.logo {
+    width: 10rem;
+    height: fit-content;
+}
+
+.hamburger {
+    display: none;
+}
+.navbar-custom {
+    display: flex;
+    gap: 10px;
+}
+.navbar-custom a {
+    font-weight: 600;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    text-wrap: nowrap;
+}
+.navbar-custom a:hover {
+    border-radius: 5rem;
+    outline: solid white 1px;
+    background-color: rgba(255, 255, 255, 0.348);
+}
+.responsive-navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+/* navbar */
+.btn-main {
+    background-color:var(--main-yellow);
+    border-radius: 5rem;
+    font-weight: 600;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    box-shadow: 4px 18px 77px -2px var(--main-yellow);
+    width: fit-content;
+}
+.btn-main:hover {
+    background-color: rgb(255, 115, 0);
+    color: white;
+}
+.hamburger {
+    background-color: rgb(255, 183, 0);
+    border-radius: 5rem;
+    padding: 10px;
+    color: white;
+    box-shadow: 4px 18px 77px -2px rgb(255, 183, 0);
+    width: fit-content;
+}
+.hamburger:hover {
+    background-color: rgb(255, 115, 0);
+    color: white;
+}
+
+.gradient-home {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 209, 255, 0.020133053221288555) 54%,
+        rgba(0, 210, 255, 1) 90%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    z-index: 2;
+    height: 100vh;
+    top: 0;
+}
+
+.explore {
+    bottom: 3rem;
+    left: 6rem;
+}
+.explore img {
+    width: 40rem;
+}
+
+.hamburger {
+    right: 0;
+}
+
+.tentang, .berita {
+    min-height: 140vh;
+}
+ .register {
+    min-height: 195vh;
+}
+
+.tentang img, .berita .berita-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+ .register-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -2;
+}
+
+.gradient-register {
+    background: linear-gradient(0deg, rgba(0,210,255,0) 0%, rgba(0,212,255,1) 88%, rgba(0,212,255,1) 98%);    z-index: 2;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+}
+.container-register {
+    max-width: 720px!important;
+    margin: auto;
+}
+.button-img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.input-icon {
+    cursor: pointer;
+}
+.btn-file {
+    border-radius: 10rem;
+    padding: 0.3rem!important;
+}
+
+
+.tentang-content, .berita-content {
+    position: absolute;
+    z-index: 90;
+    margin-top: 11rem;
+    padding: 5rem 6rem 5rem 6rem;
+}
+.register-content {
+    position: absolute;
+    z-index: 90;
+    margin-top: 11rem;
+    padding: 5rem 10rem 5rem 10rem;
+}
+.tentang-foto {
+    border-radius: 20rem;
+    object-fit: cover;
+    object-position: center;
+    width: 30rem!important;
+    height: 30rem!important;
+}
+.clouds {
+    position: absolute;
+    z-index: 60;
+    height: 9rem!important;
+    width: fit-content!important;
+}
+.clouds-1 {
+    top: 5%;
+    left: -5%;
+}
+.clouds-2 {
+    top: 52%;
+    left: 51%;
+}
+.clouds-3 {
+    top: 12%;
+    left: 59%;
+
+}
+.gradient-tentang {
+    background: linear-gradient(
+        0deg,
+        rgba(0, 209, 255, 0.8128501400560224) 0%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    z-index: 2;
+    height: 100%;
+    top: 0;
+}
+
+.gradient-berita {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.813) 0%,
+        rgb(255, 255, 255) 100%
+    );
+    z-index: 2;
+    height: 100%;
+    top: 0;
+}
+.timeline {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+.timeline-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 36px;
+}
+.timeline-body {
+    margin-left: 50px;
+    padding-top: 5px;
+}
+.timeline h5 {
+    font-weight: bold;
+}
+.timeline p {
+    margin-bottom: 5px;
+}
+.berita {
+    background-color: white;
+}
+.berita-title {
+    gap: 15px;
+    color: var(--main-yellow);
+}
+.berita-card {
+    background-color: var(--main-blue);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.berita-card-img {
+width: 100%;
+height: 25rem;
+object-fit: cover;
+}
+
+.gradient-berita-card {
+    background: linear-gradient(180deg, rgba(0,209,255,0.020133053221288555) 76%, rgba(0,210,255,1) 95%, rgba(0,212,255,1) 100%);
+        z-index: 2;
+    height: 100%;
+    top: 0;
+}
+.berita-card-title {
+    font-size: xx-large;
+color: white;
+font-weight: bold;
+}
+.berita-card:hover .berita-card-img  { 
+    transform: scale(1.2);
+}
+.berita-card:hover .berita-card-title  { 
+    color: var(--main-yellow);
+}
+.berita-card-list-container {
+    gap:10px;
+}
+.berita-card-list {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+}
+.berita-card-img-list {
+    width: 30%;
+    object-fit: cover;
+    }
+.berita-card-title-list {
+    font-size: 15px;
+color: black;
+font-weight: bold;
+}
+.berita-card-list:hover .berita-card-img-list  { 
+    transform: scale(1.1);
+}
+.berita-card-list:hover .berita-card-title-list  { 
+    color: var(--main-blue);
+}
+.btn-berita-lainnya {
+    background-color: var(--main-blue);
+    color: white;
+    padding: 15px 0 15px 0;
+}
+.btn-berita-lainnya:hover {
+    background-color: var(--main-yellow);
+    color: white;
+}
+
+footer {
+min-height: 30vh;
+background-color: var(--main-blue);
+padding: 2rem 5rem 2rem 5rem;
+}
+.footer-container {
+    padding-bottom: 1rem;
+    border-bottom: 1px white solid;
+}
+.footer-logo {
+    width: 20rem;
+}
+.social-media {
+    height: fit-content;
+    gap:10px;
+}
+.social-icon {
+    height: 2rem;
+    width: 2rem;
+}
+.text-yellow {
+    color: var(--main-yellow);
+}
+.hovered {
+    transition: all 300ms ease-in-out;
+}
+@media (max-width: 1228px) {
+    .explore img {
+        width: 30rem;
+    }
+}
+@media (max-width: 992px) {
+    .explore img {
+        width: 25rem;
+    }
+    .berita-card-list-container {
+        margin-top: 20px;
+     }
+     .hamburger {
+        display: block;
+    }
+}
+/* navbar */
+@media (max-width: 768px) {
+    .responsive-navbar {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .navbar-custom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .explore {
+        bottom: 0;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+    }
+    .explore img {
+        width: 20rem;
+    }
+    .thumbnail-container {
+        height: 20rem;
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        bottom: -4rem;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 5;
+    }
+    .thumbnail-slider {
+        width: 11rem;
+        height: 9rem;
+    }
+    .thumbnail-slider img {
+        width: 11rem;
+        height: 15rem;
+    }
+    .logo {
+        width: 10rem;
+    }
+    .header-container {
+        padding: 3px 3px 3px 3px;
+    }
+    .btn-main {
+        font-size: small;
+    }
+    .tentang-foto {
+        width: 15rem!important;
+        height: 15rem!important;
+    }
+    .clouds {
+        height: 3rem!important;
+    }
+    .tentang, .berita {
+        min-height: 260vh;
+    }
+    .register {
+        min-height: 190vh;
+        
+    }
+    .berita-card-title {
+        font-size: x-large;
+        color: white;
+        font-weight: bold;
+    }
+    .tentang-content, .berita-content, footer, .register-content {
+  
+        padding: 5rem 2rem 5rem 2rem;
+    }
+
+
+    
+}
